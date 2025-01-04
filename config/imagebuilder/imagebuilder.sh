@@ -201,8 +201,6 @@ rebuild_firmware() {
         luci-mod-status luci-mod-system luci-proto-3g luci-proto-bonding luci-proto-ipip luci-proto-ipv6 \
         luci-proto-ncm luci-proto-openconnect luci-proto-ppp luci-proto-qmi luci-proto-relay \
         \
-        luci-app-amlogic luci-i18n-amlogic-zh-cn \
-        \
         ${config_list} \
         "
 
@@ -228,7 +226,7 @@ echo -e "${INFO} Server space usage before starting to compile: \n$(df -hT ${mak
 # Perform related operations
 download_imagebuilder
 adjust_settings
-custom_packages
+#custom_packages
 custom_config
 custom_files
 rebuild_firmware
